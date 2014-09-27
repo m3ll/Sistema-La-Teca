@@ -1,0 +1,392 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4FDE67F2-2A8A-429C-BA2A-8DE67341FE02}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ModuloCaja_TCS</RootNamespace>
+    <AssemblyName>ModuloCaja TCS</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BuscarProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarProducto.Designer.cs">
+      <DependentUpon>BuscarProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CambiarMesa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CambiarMesa.Designer.cs">
+      <DependentUpon>CambiarMesa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Conexion.cs" />
+    <Compile Include="EDetalle.cs" />
+    <Compile Include="EFactura.cs" />
+    <Compile Include="fmrInventarioCabanas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmrInventarioCabanas.Designer.cs">
+      <DependentUpon>fmrInventarioCabanas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenuInventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenuInventario.Designer.cs">
+      <DependentUpon>frmMenuInventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInventarioCabanas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInventarioCabanas.Designer.cs">
+      <DependentUpon>frmInventarioCabanas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInventarioProductosRestaurante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInventarioProductosRestaurante.Designer.cs">
+      <DependentUpon>frmInventarioProductosRestaurante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formRestaurante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formRestaurante.Designer.cs">
+      <DependentUpon>formRestaurante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClientes.Designer.cs">
+      <DependentUpon>frmClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFacturarReservacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFacturarReservacion.Designer.cs">
+      <DependentUpon>frmFacturarReservacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFacturarRestaurante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFacturarRestaurante.Designer.cs">
+      <DependentUpon>frmFacturarRestaurante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenuFacturacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenuFacturacion.Designer.cs">
+      <DependentUpon>frmMenuFacturacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenuPersonas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenuPersonas.Designer.cs">
+      <DependentUpon>frmMenuPersonas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Imprimir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Imprimir.Designer.cs">
+      <DependentUpon>Imprimir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInformesFacturas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInformesFacturas.Designer.cs">
+      <DependentUpon>frmInformesFacturas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuReservasiones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuReservasiones.Designer.cs">
+      <DependentUpon>MenuReservasiones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Ordenar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ordenar.Designer.cs">
+      <DependentUpon>Ordenar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedidos.Designer.cs">
+      <DependentUpon>Pedidos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Platos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Platos.Designer.cs">
+      <DependentUpon>Platos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenuPrincipal.Designer.cs">
+      <DependentUpon>frmMenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Restaurante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Restaurante.Designer.cs">
+      <DependentUpon>Restaurante.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BuscarProducto.resx">
+      <DependentUpon>BuscarProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CambiarMesa.resx">
+      <DependentUpon>CambiarMesa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmrInventarioCabanas.resx">
+      <DependentUpon>fmrInventarioCabanas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenuInventario.resx">
+      <DependentUpon>frmMenuInventario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInventarioCabanas.resx">
+      <DependentUpon>frmInventarioCabanas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInventarioProductosRestaurante.resx">
+      <DependentUpon>frmInventarioProductosRestaurante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formRestaurante.resx">
+      <DependentUpon>formRestaurante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClientes.resx">
+      <DependentUpon>frmClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFacturarReservacion.resx">
+      <DependentUpon>frmFacturarReservacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFacturarRestaurante.resx">
+      <DependentUpon>frmFacturarRestaurante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenuFacturacion.resx">
+      <DependentUpon>frmMenuFacturacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenuPersonas.resx">
+      <DependentUpon>frmMenuPersonas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imprimir.resx">
+      <DependentUpon>Imprimir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInformesFacturas.resx">
+      <DependentUpon>frmInformesFacturas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuReservasiones.resx">
+      <DependentUpon>MenuReservasiones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\Debug\ModuloCaja_TCS.Imprimir.resources" />
+    <EmbeddedResource Include="obj\Debug\ModuloCaja_TCS.Properties.Resources.resources" />
+    <EmbeddedResource Include="obj\Debug\Restaurante.BuscarProducto.resources" />
+    <EmbeddedResource Include="obj\Debug\Restaurante.CambiarMesa.resources" />
+    <EmbeddedResource Include="obj\Debug\Restaurante.Ordenar.resources" />
+    <EmbeddedResource Include="obj\Debug\Restaurante.Pedidos.resources" />
+    <EmbeddedResource Include="obj\Debug\Restaurante.Platos.resources" />
+    <EmbeddedResource Include="obj\Debug\Restaurante.Restaurante.resources" />
+    <EmbeddedResource Include="Ordenar.resx">
+      <DependentUpon>Ordenar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedidos.resx">
+      <DependentUpon>Pedidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Platos.resx">
+      <DependentUpon>Platos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenuPrincipal.resx">
+      <DependentUpon>frmMenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ReporteFacturaRestaurante.rdlc" />
+    <EmbeddedResource Include="Restaurante.resx">
+      <DependentUpon>Restaurante.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="bin\Debug\ModuloCaja TCS.exe.config" />
+    <None Include="bin\Debug\ModuloCaja TCS.vshost.exe.config" />
+    <None Include="bin\Debug\ModuloCaja TCS.vshost.exe.manifest" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\ModuloCaja TCS.csproj.GenerateResource.Cache" />
+    <None Include="obj\Debug\ModuloCaja TCS.csprojResolveAssemblyReference.cache" />
+    <None Include="obj\Debug\RdlCompile.cache" />
+    <None Include="obj\Debug\RdlCompile.compiled" />
+    <None Include="Properties\DataSources\EDetalle.datasource" />
+    <None Include="Properties\DataSources\EFactura.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buscar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buscar %28Copiar%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back %28Copiar%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hotel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10675639_733989529982075_3255795930782021098_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restaurant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1411609912_tmp_sleep_hotel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hotel1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inventory.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sign_out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\ModuloCaja TCS.exe" />
+    <Content Include="bin\Debug\ModuloCaja TCS.pdb" />
+    <Content Include="bin\Debug\ModuloCaja TCS.vshost.exe" />
+    <Content Include="Imagenes\Add.png" />
+    <Content Include="Imagenes\back.png" />
+    <Content Include="Imagenes\beer.png" />
+    <Content Include="Imagenes\bocas.png" />
+    <Content Include="Imagenes\buscar.png" />
+    <Content Include="Imagenes\cake.png" />
+    <Content Include="Imagenes\cancel %28Copiar%29.png" />
+    <Content Include="Imagenes\cancel.png" />
+    <Content Include="Imagenes\check.png" />
+    <Content Include="Imagenes\clean.png" />
+    <Content Include="Imagenes\cutlet.png" />
+    <Content Include="Imagenes\dish.png" />
+    <Content Include="Imagenes\edit.png" />
+    <Content Include="Imagenes\eliminar.png" />
+    <Content Include="Imagenes\ensaladas.png" />
+    <Content Include="Imagenes\Gaseosa.png" />
+    <Content Include="Imagenes\Guarniciones.png" />
+    <Content Include="Imagenes\Hotel.ico" />
+    <Content Include="Imagenes\Hotel.png" />
+    <Content Include="Imagenes\mesa %28Copiar%29.png" />
+    <Content Include="Imagenes\mesa.png" />
+    <Content Include="Imagenes\new.png" />
+    <Content Include="Imagenes\open.png" />
+    <Content Include="Imagenes\pagar.png" />
+    <Content Include="Imagenes\pig.png" />
+    <Content Include="Imagenes\plat.jpg" />
+    <Content Include="Imagenes\pollo.png" />
+    <Content Include="Imagenes\print.png" />
+    <Content Include="Imagenes\redo.png" />
+    <Content Include="Imagenes\save.png" />
+    <Content Include="obj\Debug\ModuloCaja TCS.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\ModuloCaja TCS.exe" />
+    <Content Include="obj\Debug\TempPE\Properties.Resources.Designer.cs.dll" />
+    <None Include="Resources\user2.png" />
+    <None Include="Resources\10644678_735598909821137_1933969775735654475_o.jpg" />
+    <None Include="Resources\10609499_735639766483718_980562412117235223_n.jpg" />
+    <None Include="Resources\system_report.png" />
+    <None Include="Resources\cash_register.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
